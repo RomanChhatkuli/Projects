@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: url(hero-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+    .logo img {
+        width: 43px;
+        border-radius: 70px;
+    }
+    .sidebar{
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        height: 100%;
+        width: 90px;
+        background: rgb(225,225,225,0.2);
+        backdrop-filter: blur(10px);
+        --webkit-backdrop-filter: blur(10px);
+        transition: width 0.5s ease ;
+    }
+    .sidebar .logo{
+        display: flex;
+        align-items: center;
+        padding: 25px 10px 15px;
+    }
+    .sidebar ul li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin: 5px;
+    }
+    .sidebar ul{
+        margin-top: 20px;
+    }
+
+    .sidebar ul li a {
+        text-decoration: none;
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        white-space: no-wrap;
+        font-weight: 600;
+        display: none;
+        padding: 8px;
+    }
+    .sidebar:hover ul li a{
+        display: block;
+    }
+    .sidebar h4{
+        font-size: 20px;
+        margin-top: 20px;
+        padding: 5px;
+        display: none;
+    }
+    .sidebar .logo h2{
+        display: none;
+    }
+    .sidebar:hover .logo h2{
+        display: block;
+    }
+    .sidebar:hover h4{
+        display: block;
+    }
+    .logo h2{
+        margin-left: 10px;
+    }
+    .sidebar ul li:hover{
+        background-color: #fff;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    .sidebar:hover{
+        width: 230px;
+    }

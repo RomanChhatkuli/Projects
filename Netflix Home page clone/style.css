@@ -1,0 +1,373 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;                      
+}
+
+button{
+    cursor: pointer;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url(bg.jpg);
+    height: 95vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: max(1200px, 100vw); */
+    position: relative;
+    border-bottom: 11px solid rgb(38, 37, 37);
+}
+.nav img{
+    width: 220px;
+    height: 40px;
+    margin-top: 20px;
+}
+.nav button{
+    background-color: rgb(215, 15, 15);
+    color: #ffff;
+    border-radius: 6px;
+    width: 75px;
+    height: 35px;
+    font-size: 14px;
+    font-weight:500;
+    margin-top: 25px;
+    border: 1px solid rgb(31, 30, 30);
+}
+.nav{
+    display: flex;
+    max-width: 75vw;
+    margin: auto;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    
+}
+.box{
+    height: 95vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+}
+.hero{
+    display: flex;
+    position: relative;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffff;
+    top: -18px;
+}
+.hero span{
+    padding: 5px;
+    margin: 5px;
+}
+.hero span:first-child{
+    font-size: 48px;
+    font-weight: 900;
+}
+.hero span:nth-child(2){
+    font-size: 24px;
+    font-weight: 400;
+}
+.hero span:nth-child(3){
+    font-size: 20px;
+    font-weight: 400;
+}
+.Emailbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.Emailbox input{
+    width: 390px;
+    height: 55px;
+    margin-right: 9px;
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 5px;
+    border: 1px solid rgba(245, 222, 179, 0.729);
+}
+.Emailbox input::placeholder{
+    padding: 20px;
+    color: #ffff;
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 20px;  
+}
+.Emailbox button{
+    background-color: red;
+    height: 55px;
+    width: 200px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #ffff;
+    padding: auto;
+    border-radius: 5px;
+}
+.first{
+    color: #ffff;
+    max-width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.first .tv{
+    position: relative;
+}
+.first img{
+    position: relative;
+    z-index: 1;
+}
+.first h1{
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.first span{
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+.first video{
+    position: absolute;
+    top: 97px;
+    right: 85px;
+}
+.border2{
+    margin-top: 50px;
+    border-bottom: 11px solid rgb(38, 37, 37);
+}
+.second .text2 h2{
+    font-size: 48px;
+    font-weight: 900;
+}
+.second .text2 p{
+    font-size: 24px;
+    font-weight: 400;
+}
+.second .image2 img{
+    transform: scale(0.9);
+}
+.third{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 330px;
+    width: 27vw;
+}
+.third .text3 h2{
+    font-size: 48px;
+    font-weight: 900;
+}
+.third .text3 p{
+    font-size: 24px;
+    font-weight: 400;
+}
+.fourth .text4 h2{
+    font-size: 48px;
+    font-weight: 900;
+}
+.fourth .text4 p{
+    font-size: 24px;
+    font-weight: 400;
+}
+.faq{
+    color: #ffff;
+}
+.faq h1{
+    padding-top: 40px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin: auto;
+    font-size: 48px;
+    font-weight: 900;
+    max-width: 80vw;
+}
+.faqbox{
+    height: 80px;
+    background-color: rgba(53, 51, 51, 0.875);
+    width: 75vw;
+    margin: auto;
+    font-size: 24px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    margin-top: 10px;
+    padding-top: 5px;
+}
+.faqbox span{
+    scale: 1.7;
+    padding-right: 20px;
+}
+.faq p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 45px ;
+    margin-bottom: 20px;
+}
+.faq .lower{
+    margin-bottom: 60px;
+}
+.last{
+   padding-top: 60px;
+   color: rgba(225,225,225,0.7);
+    max-width: 75vw;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+.last h4{
+
+    padding-bottom: 20px;
+}
+.last h4 a{
+    font: 16px;
+    color: rgba(225,225,225,0.7);
+    font-weight: 600;
+}
+.last ul {
+    list-style: none;
+}
+.last .rows a{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(225, 225, 225, 0.896);
+}
+.last .columns .rows { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-right: 18px;
+    margin-bottom: 16px;
+}
+.language{
+    padding-bottom: 20px;
+    padding-top: 8px;
+}
+.language button{
+    color: #ffff;
+    font-size: 16px;
+    font-weight: 600;
+    width: 120px;
+    height: 35px;
+    padding: 2px;
+    background-color: rgba(40, 39, 39, 0.482);
+    border: 0.5px solid white;
+    border-radius: 4px;
+    display: flex;
+    text-align: center;
+    gap: 10px;
+    padding-left: 8px;
+    align-items: center;
+    box-sizing: border-box;
+}
+.language button:hover{
+    border-spacing: 5vw;
+    border: 2px solid white;
+}
+.last .lastline{
+    padding-bottom: 60px;
+}
+
+@media screen and (max-width: 1300px) {
+    .main .nav img{
+        transform: scale(0.7);
+    }
+    .main .nav{
+        max-width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        left: -30px;
+        
+    }
+    /* .main{
+        height: 70vh
+    } */
+    .second .image2 img{
+        transform: scale(0.7);
+    }
+    .fourth .image img{
+        transform: scale(0.7);
+    }
+    .Emailbox{
+        transform: scale(0.8);
+    }
+    button{
+        transform: scale(0.9);
+    }
+    nav{
+        max-width: 90vw;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .tv img {
+        width: 305px;
+    }
+
+    .first video {
+        width: 250px;
+        position: absolute;
+        top: 50px;
+        left: 35px;
+    }
+
+    .hero span:nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero span:nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero span:nth-child(3) {
+        font-size: 18px;
+    }
+
+    .Emailbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+    .third {
+        position: relative;
+        left: -190px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    section .faq  {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .rows{
+        align-items: center;
+    }
+    .last .columns .rows { 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
