@@ -11,6 +11,9 @@ button{
 body{
     background-color: black;
 }
+#btn:hover{
+    background-color: rgba(255, 0, 0, 0.753);
+}
 .main{
     background-image: url(bg.jpg);
     height: 95vh;
