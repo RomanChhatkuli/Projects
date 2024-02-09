@@ -61,3 +61,20 @@ button{
     right: 0;
     color: #3a4452;
 }
+@media only screen and (max-width: 700px) {
+    body{
+        display: block;
+    }
+    .calculator{
+        transform: scale(0.8);
+        position: relative;
+        left: -10px;
+        width: 400px;
+        height: 450px;
+
+    }
+    button{
+        transform: scale(0.7);
+        margin: 0;
+    }
+}
