@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: url(https://picjumbo.com/wp-content/uploads/beautiful-nature-mountain-scenery-with-flowers-free-photo.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #time {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 80px;
+            font-weight: bolder;
+            font-family: sans-serif;
+            position: relative;
+            top: -100px;
+            width: 450px;
+            height: 200px;
+            border-width: 5px;
+            border-style: solid;
+            border-image: linear-gradient(to right, #FF0000, #FF7F00, #FFFF00, #00FF00, #0000FF, #4B0082, #9400D3) 1;
+            background-color: #6c537d;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="time">
+        <span id="hr"></span>
+        <span>:</span>
+        <span id="min"></span>
+        <span>:</span>
+        <span id="sec"></span>
+    </div>
+    <script>
+
+        setInterval(() => {
+            let d =  new Date()
+            document.body.querySelector("#hr").innerHTML=(d.getHours()<10? "0":"")+d.getHours()
+            document.body.querySelector("#min").innerHTML=(d.getMinutes()<10? "0":"") + d.getMinutes()
+            document.body.querySelector("#sec").innerHTML=(d.getSeconds()<10? "0":"") + d.getSeconds()
+        }, 1000);
+
+
+    </script>
+</body>
+
+</html>
